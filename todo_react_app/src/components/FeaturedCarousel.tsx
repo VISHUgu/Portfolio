@@ -26,7 +26,7 @@ export function FeaturedCarousel() {
           <div className="slide-body">
             <span className="eyebrow">Featured · {p.category}</span>
             <h3>{p.title}</h3>
-            <p>{p.short}</p>
+            {/* <p>{p.short}</p> */}
             <Link to="/projects/$slug" params={{ slug: p.slug }} className="btn btn-primary btn-sm" tabIndex={idx === i ? 0 : -1}>
               View Details
             </Link>

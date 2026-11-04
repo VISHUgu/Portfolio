@@ -7,62 +7,53 @@ export type Category = "Frontend" | "Backend" | "Full Stack";
 export interface Project {
   slug: string;
   title: string;
-  short: string;
-  overview: string;
   category: Category;
   tech: string[];
   features: string[];
   image: string;
   screenshots: string[];
   github: string;
-  demo: string;
   featured?: boolean;
 }
 
 export const projects: Project[] = [
-  {
-    slug: "pulse-analytics",
-    title: "Pulse Analytics",
-    short: "Real-time analytics dashboard for SaaS metrics with live charts.",
-    overview:
-      "Pulse is a real-time analytics platform that helps SaaS teams track revenue, churn and engagement. A Django backend streams events over WebSockets to a React dashboard with interactive charts and saved views.",
-    category: "Full Stack",
-    tech: ["React", "TypeScript", "Django", "PostgreSQL", "WebSockets"],
-    features: ["Live updating charts", "Custom saved dashboards", "Role-based team access", "CSV & PDF exports"],
-    image: dashboard,
-    screenshots: [dashboard, api, shop],
-    github: "https://github.com/",
-    demo: "https://example.com/",
-    featured: true,
-  },
+  // {
+  //   slug: "pulse-analytics",
+  //   title: "Pulse Analytics",
+  //   // short: "Real-time analytics dashboard for SaaS metrics with live charts.",
+  //   // overview:
+  //     // "Pulse is a real-time analytics platform that helps SaaS teams track revenue, churn and engagement. A Django backend streams events over WebSockets to a React dashboard with interactive charts and saved views.",
+  //   category: "Full Stack",
+  //   tech: ["React", "TypeScript", "Django", "PostgreSQL", "WebSockets"],
+  //   features: ["Live updating charts", "Custom saved dashboards", "Role-based team access", "CSV & PDF exports"],
+  //   image: dashboard,
+  //   screenshots: [dashboard, api, shop],
+  //   github: "https://github.com/",
+  //   featured: true,
+  // },
   {
     slug: "nova-store",
-    title: "Nova Store",
-    short: "Headless e-commerce storefront with cart, checkout and wishlists.",
-    overview:
-      "Nova Store is a fast, mobile-first storefront built with React and a Django REST API. It supports product search, filtering, persistent carts and a streamlined checkout flow.",
+    title: "Portfolio Website",
+    // short: "Headless e-commerce storefront with cart, checkout and wishlists.",
+    // overview:
+      // "Nova Store is a fast, mobile-first storefront built with React and a Django REST API. It supports product search, filtering, persistent carts and a streamlined checkout flow.",
     category: "Full Stack",
-    tech: ["React", "Django REST", "SQL", "Stripe"],
+    tech: ["React", "TypeScript", "JavaScript"],
     features: ["Faceted product search", "Persistent cart & wishlist", "Order history", "Admin inventory panel"],
     image: shop,
     screenshots: [shop, dashboard, api],
     github: "https://github.com/",
-    demo: "https://example.com/",
     featured: true,
   },
   {
     slug: "atlas-api",
-    title: "Atlas API Gateway",
-    short: "Scalable REST API gateway with auth, rate limiting and caching.",
-    overview:
-      "Atlas is a Python-based API gateway that sits in front of microservices, handling JWT authentication, rate limiting, request logging and Redis caching.",
+    title: "Monthly-Spend-Portfolio",
     category: "Backend",
-    tech: ["Python", "Django", "Redis", "Docker", "PostgreSQL"],
+    tech: ["HTML", "CSS", "JavaScript","Python", "Django", "MySQL"],
     features: ["JWT authentication", "Per-client rate limits", "Response caching", "Structured request logs"],
     image: api,
     screenshots: [api, dashboard],
     github: "https://github.com/",
-    demo: "https://example.com/",
     featured: true,
   },
   // {

@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowLeft, CheckCircle2, Code2, ExternalLink } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Code2, } from "lucide-react";
 import { projects } from "@/data/projects";
 
 export function ProjectDetailPage({ slug }: { slug: string }) {
@@ -20,17 +20,17 @@ export function ProjectDetailPage({ slug }: { slug: string }) {
       <div className="project-intro fade-up">
         <span className="badge badge-cat">{p.category}</span>
         <h1 className="h1 project-title">{p.title}</h1>
-        <p className="lead project-summary">{p.short}</p>
+        {/* <p className="lead project-summary">{p.short}</p> */}
         <div className="hero-actions">
           <a href={p.github} target="_blank" rel="noreferrer" className="btn btn-outline"><Code2 size={16} /> GitHub</a>
-          <a href={p.demo} target="_blank" rel="noreferrer" className="btn btn-primary"><ExternalLink size={16} /> Live Demo</a>
+          {/* <a href={p.demo} target="_blank" rel="noreferrer" className="btn btn-primary"><ExternalLink size={16} /> Live Demo</a> */}
         </div>
       </div>
       <div className="detail-hero fade-up delay-1"><img src={p.image} alt={p.title} width={1280} height={768} /></div>
       <div className="two-col">
         <div>
           <h2 className="h2">Overview</h2>
-          <p className="lead">{p.overview}</p>
+          {/* <p className="lead">{p.overview}</p> */}
         </div>
         <div>
           <h2 className="h2">Key features</h2>
